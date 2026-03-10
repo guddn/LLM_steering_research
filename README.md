@@ -3,4 +3,6 @@
 - encoder only model
 - 문장간 유사도 간단하게 측정
 
-2. 
+2. llama_hooking.py
+- 사용 모델: Qwen2.5-1.5B
+- 출력층에서 hooking
