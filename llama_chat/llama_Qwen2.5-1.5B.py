@@ -2,10 +2,11 @@ from llama_cpp import Llama
 
 def create_prompt(user_input):
     return f'''
-    당신은 계산을 정확하게 수행하는 계산기입니다.
-    주어진 계산 문제에 대해 정확한 답을 제공해주세요.
-    계산 문제에 대한 풀이과정을 항상 포함합니다.
-    계산 문제는 다음과 같습니다: {user_input}
+    당신은 최고의 AI 어시스턴트입니다. 
+    사용자의 질문에 대해 친절하고 정확하게 답변해 주세요.
+    정확하지 않은 답변은 하지 않습니다.
+    천천히 차례대로 생각해서 답변해 주세요.
+    사용자의 질문: {user_input}
     '''
 
 llm = Llama.from_pretrained(
