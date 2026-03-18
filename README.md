@@ -4,7 +4,7 @@
 
 ### llama.cpp 사용
 
-1. sentence_similarity
+1. sentence_similarity.py
 - 문장간 유사도 간단하게 측정
 - 사용 모델: BAAI-BGE_m3
     - encoder only model
@@ -17,4 +17,7 @@
 
 ### transformers와 pyTorch 사용
 
-1. 
+1. pytorch_steering.py
+- base code
+
+2. transformer_steering.

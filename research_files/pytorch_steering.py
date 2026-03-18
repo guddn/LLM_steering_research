@@ -21,10 +21,6 @@ alpha = 3.0
 target_token = -1
 
 def steering_hook(module, inputs, output):
-    """
-    Qwen block output은 보통 hidden_states tensor 또는 tuple일 수 있음.
-    모델마다 형태가 다를 수 있어 처리 필요.
-    """
     if isinstance(output, tuple):
         hidden_states = output[0]
         hidden_states = hidden_states.clone()

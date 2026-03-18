@@ -1,8 +1,7 @@
 from llama_cpp import Llama
 import numpy as np
 
-# 1. 모델 로드 (Gemma 3 1B 또는 Qwen 1.5B GGUF)
-# embedding=True 설정이 핵심입니다! 이 설정을 켜야 중간 값을 뽑을 수 있습니다.
+# 모델 로드
 llm = Llama.from_pretrained(
     repo_id="Qwen/Qwen2.5-1.5B-Instruct-GGUF",
     filename="qwen2.5-1.5b-instruct-q4_k_m.gguf",
@@ -15,8 +14,7 @@ llm = Llama.from_pretrained(
 def get_layer_activations(text):
     tokens = llm.tokenize(text.encode('utf-8'))
     llm.eval(tokens)
-    
-    # 은닉 상태(Hidden States) 추출
+
     embeddings = llm.create_embedding(text)
     
     return np.array(embeddings['data'][0]['embedding'])
