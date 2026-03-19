@@ -20,4 +20,13 @@
 1. pytorch_steering.py
 - base code
 
-2. transformer_steering.
+2. transformer_steering.ipynb
+- 금문교 벡터 추출 실험
+    - Qwen
+        - 총 32layer의 모델
+        - 12~20 layer를 건드리면 가장 효과가 좋았음
+        - Alpha 값은 60~80이 핵심
+        - 
+    - EXAONE: 
+    - gemma
+        - 총 42layer로 깊은 모델이라 
