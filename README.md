@@ -23,15 +23,15 @@
     - 현재 총 4가지 데이터 셋
         - golden_gate_pairs
         - positive_negative_pairs,
-        - toxicity_pairs,
+        - ~toxicity_pairs,~
         - logic_pairs
     - steering 벡터 추출 실험
         - Qwen
             - 총 32layer의 모델
-            - 12~20 layer, Alpha = 60~80이 핵심
+            - 12-20 layer, Alpha = 60-80이 핵심
             - 
         - gemma
             - 총 42layer로 깊은 모델
-            - 26~32 layer, Alpha = 100~200이 핵심
+            - 26-32 layer, Alpha = 100-200이 핵심
             - 26, 28 layer가 가장 효율 좋은 듯
             - 30 layer 이후에는 내용보다는 문체와 이모지 사용에 더 영향을 주는 듯
